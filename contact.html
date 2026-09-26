@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ur">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Aurelia Jewels</title>
+    <title>Contact Us - Royal Jewellery</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #d4af37;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d4af37;
+            background-color: #0b132b;
+            color: #f4e8c1;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <a href="index.html" class="logo"><i class="fas fa-gem"></i> Aurelia Jewels</a>
+        <div class="logo">ROYAL JEWELLERY</div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="rings.html">Rings</a></li>
-                <li><a href="bracelets.html">Bracelets</a></li>
-                <li><a href="lockets.html">Lockets</a></li>
-                <li><a href="tops.html">Tops</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="ring.html">Rings</a></li>
+                <li><a href="bracelet.html">Bracelets</a></li>                
+                <li><a href="locket.html">Lockets</a></li>
+                <li><a href="why-us.html">Why Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="title-center"><h2 class="section-title">About & Contact Us</h2></div>
-        
-        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 25px; border-radius: 8px; border: 1px solid #e0e0e0;">
-            <h3 style="color: #d4af37; margin-bottom: 10px;">Aurelia Jewels</h3>
-            <p style="margin-bottom: 20px; line-height: 1.6;">We offer pure gold, diamond, and custom jewelry crafted with elegance and passion. Visit our store or contact us on WhatsApp for custom orders.</p>
-            
-            <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
-            
-            <p style="margin: 10px 0;"><i class="fas fa-location-dot" style="color: #d4af37; width: 25px;"></i> Main Bazaar, City Store, Pakistan</p>
-            <p style="margin: 10px 0;"><i class="fas fa-phone" style="color: #d4af37; width: 25px;"></i> +92 300 1234567</p>
-            <p style="margin: 10px 0;"><i class="fas fa-clock" style="color: #d4af37; width: 25px;"></i> Mon - Sat: 11:00 AM - 9:00 PM</p>
-            
-            <a href="https://wa.me/923001234567" target="_blank" class="buy-btn" style="display: block; text-align: center; margin-top: 20px; padding: 12px;">
-                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-            </a>
-        </div>
+    <h1 class="page-title">Contact Us</h1>
+
+    <div style="max-width: 600px; margin: 30px auto; padding: 30px; background: #1c2541; border: 1px solid #d4af37; border-radius: 8px;">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required placeholder="Write Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required placeholder="Write Your Email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" required placeholder="Write Your Message..."></textarea>
+            </div>
+            <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Send Message</button>
+        </form>
     </div>
 
     <footer>
-        <p>&copy; 2026 Aurelia Jewels. All Rights Reserved.</p>
+        <p>&copy; 2026 Royal Jewellery. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

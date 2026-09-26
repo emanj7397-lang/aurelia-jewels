@@ -1,18 +1,13 @@
-let cartCount = 0;
-
-function addToCart() {
-    cartCount++;
-    const badge = document.getElementById('cart-count');
-    if(badge) {
-        badge.textContent = cartCount;
-    }
-}
-
 document.addEventListener('DOMContentLoaded', () => {
-    const btns = document.querySelectorAll('.buy-btn');
-    btns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            addToCart();
+    const contactForm = document.getElementById('contactForm');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Shukriya! Aap ka paigham hum tak pohanch gaya hai. Hum jaldi aap se rabta karengy.');
+            contactForm.reset();
         });
-    });
+    }
 });
+
+
